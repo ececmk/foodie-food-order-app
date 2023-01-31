@@ -5,7 +5,8 @@ import classes from './Header.module.css';
 
 
 const Header = props => {
-    return <Fragment>
+    return (
+    <Fragment>
        <header className={classes.header}>
         <h1>Foodie</h1>
        <HeaderCartButton onClick={props.onShowCart} />
@@ -14,7 +15,7 @@ const Header = props => {
         <img src={mealsImage} alt='Pizza'/>
        </div>
     </Fragment>
-
+)
 };
 
 export default Header;
